@@ -2,10 +2,10 @@ from flask import Flask, url_for, request, render_template
 from QandA.app import app
 import redis
 # connect to redis data store
-r = redis.StrictRedis(host='localhost', port=6379, db=0, charset= "utf-8", decode_responses= True)
+#r = redis.StrictRedis(host='localhost', port=6379, db=0, charset= "utf-8", decode_responses= True)
 # All three lines here are same
 # r = redis.StrictRedis()
-# r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=', charset= "utf-8", decode_responses= True)
+r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=', charset= "utf-8", decode_responses= True)
 
 # Server/create
 @app.route('/')
