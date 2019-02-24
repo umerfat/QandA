@@ -5,7 +5,7 @@ import redis
 #r = redis.StrictRedis(host='localhost', port=6379, db=0, charset= "utf-8", decode_responses= True)
 # All three lines here are same
 # r = redis.StrictRedis()
-r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=', charset= "utf-8", decode_responses= True)
+r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=')
 
 # Server/create
 @app.route('/')
@@ -18,7 +18,7 @@ def hello():
         <title>Create Question</title>
     </head>
     <body>
-        <div> <h2>""" +createLink+ """</h2> </div>
+        <div> <h2>Welcome to flask</h2> </div>
     </body>
 </html>
     """
