@@ -5,7 +5,7 @@ import redis
 #r = redis.StrictRedis(host='localhost', port=6379, db=0, charset= "utf-8", decode_responses= True)
 # All three lines here are same
 # r = redis.StrictRedis()
-r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=')
+#r = redis.StrictRedis(host='qanda.redis.cache.windows.net', port=6379, ssl = True, db = 0, password = 'Kz4fVQTOoGfc2anxQmRzbHpfnEijOKoG4ae98Cu2Mk4=')
 
 # Server/create
 @app.route('/')
